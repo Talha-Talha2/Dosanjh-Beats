@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Dosanjh Beats App",
+    "short_name": "Dosanjh Beats",
+    "description": "Music caalogue with artists, albums and tacks",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "PWA Logo.png",
+            "sizes": "500x500"
+        }
+    ]
+}
