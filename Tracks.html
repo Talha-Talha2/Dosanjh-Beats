@@ -19,22 +19,24 @@
 
     <div class="DROPDOWNMENU">
 
-        <button>⁝</button>
-        <div class="THEMEMODES">
+		<button>⁝</button>
+		<div class="THEMEMODES">
 
-            <button>Light Mode</button>
-            <button>Dark Mode</button>
+			<button class="BTN Light" onclick="swapStyle{'Tracks(Light).css'}">Light Mode</button>
+			<button class="BTN Dark" onclick="swapStyle{'Tracks(Dark).css'}">Dark Mode</button>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
-    <script>
+	<script>
 
+		function swapStyle(sheet){
+			document.getelementbyId('stylesheet').href = sheet
+		}
 
-
-    </script>
-
+	</script>
+    
     <!-- This section is for the links for the different webpages from the albums webpage! -->
 
     <a href="index.html">Home</a>
