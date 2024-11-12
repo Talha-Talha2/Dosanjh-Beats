@@ -1,0 +1,25 @@
+/* This section is for the dropdown menu */
+
+.DROPDOWNMENU button{
+  background-color: rgb(255, 233, 233);
+  color: rgb(0, 0, 0);
+  padding: 3px 3px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.THEMEMODES button{
+  display: block;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 8px;
+}
+
+.DROPDOWNMENU .THEMEMODES{
+  display: none;
+  position: absolute;
+}
+
+.DROPDOWNMENU:hover .THEMEMODES{
+  display: block;
+}
