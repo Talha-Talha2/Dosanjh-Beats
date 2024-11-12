@@ -24,8 +24,8 @@
 		<button>⁝</button>
 		<div class="THEMEMODES">
 
-			<button>Light Mode</button>
-			<button>Dark Mode</button>
+			<button class="BTN Light" onclick="swapStyle{'index(Light).css'}">Light Mode</button>
+			<button class="BTN Dark" onclick="swapStyle{'index(Dark).css'}">Dark Mode</button>
 
 		</div>
 
@@ -33,7 +33,9 @@
 
 	<script>
 
-
+		function swapStyle(sheet){
+			document.getelementbyId('stylesheet').href = sheet
+		}
 
 	</script>
 
