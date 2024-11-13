@@ -3,7 +3,6 @@
 .DROPDOWNMENU button{
   background-color: rgb(255, 233, 233);
   color: rgb(0, 0, 0);
-  margin: 5px 5px;
   padding: 3px 3px;
   border-radius: 5px;
   cursor: pointer;
@@ -23,4 +22,8 @@
 
 .DROPDOWNMENU:hover .THEMEMODES{
   display: block;
+}
+
+.TOP-SECTION{
+  display: inline;
 }
