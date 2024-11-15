@@ -23,7 +23,3 @@
 .DROPDOWNMENU:hover .THEMEMODES{
   display: block;
 }
-
-.PWA-LOGO .PWA_TITLE .DROPDOWNMENU{
-  display: inline;
-}
