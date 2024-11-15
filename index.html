@@ -25,20 +25,20 @@
 		
 		<div class="THEMEMODES">
 			
-			<button class="BTN Light" onclick="swapStyle{'indexLight.css'}">Light Mode</button>
-			<button class="BTN Dark" onclick="swapStyle{'indexDark.css'}">Dark Mode</button>
-
-			<script>
-				
-				function swapStyle(sheet){
-					document.getElementById('mystylesheet').href = sheet
-				}
-			
-			</script>
+			<button class="BTN Light" onclick="swapStyle('indexLight.css')">Light Mode</button>
+			<button class="BTN Dark" onclick="swapStyle('indexDark.css')">Dark Mode</button>
 		
 		</div>
 		
 	</div>
+
+	<script>
+		
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+		}	
+	
+	</script>
 
 	<!-- This section is for the links for diferent webpage from the homepage! -->
 
