@@ -6,7 +6,15 @@
 	
 	<meta charset="utf-8" />
 	<title>Albums</title>
-	<link rel="stylesheet" href="Albums(Light).css">
+	<link id="mystylesheet" rel="stylesheet" href="Albums(Light).css">
+
+	<script>
+
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+		}
+
+	</script>
 
 </head>
 
@@ -29,14 +37,6 @@
 		</div>
 
 	</div>
-
-	<script>
-
-		function swapStyle(sheet){
-			document.getelementbyId('stylesheet').href = sheet
-		}
-
-	</script>
 	
 	<!-- This section is for the links for the different webpages from the albums webpage! -->
 	
@@ -49,10 +49,6 @@
 	<br>
 	
 	<a href="Tracks.html">Tracks</a>
-	
-	<br>
-	
-	<a href="Add Your Own.html">Add Your Own</a>
 
 </body>
 
