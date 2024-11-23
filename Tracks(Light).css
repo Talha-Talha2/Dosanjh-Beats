@@ -1,0 +1,184 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(249, 249, 249);
+    color: rgb(51, 51, 51);
+    margin: 0;
+    padding: 0;
+}
+
+/* PWA Title styling */
+.PWA-TITLE {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 77, 77); /* Light red for the title */
+    margin: 20px 0 10px; /* Reduced bottom margin for closer spacing */
+}
+
+/* Logo styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+/* Dropdown menu container */
+.DROPDOWNMENU {
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+}
+
+/* Dropdown menu button */
+.DROPDOWNMENU > button {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dropdown menu items */
+.THEMEMODES {
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 0; /* Align dropdown items to the right edge */
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.THEMEMODES .BTN {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.THEMEMODES .BTN:hover {
+    background-color: rgb(255, 102, 102);
+}
+
+/* Show dropdown items on hover */
+.DROPDOWNMENU:hover .THEMEMODES {
+    display: block;
+}
+
+/* Links styling */
+a {
+    color: rgb(0, 140, 255);
+    text-decoration: none;
+    font-size: 19px;
+    margin: 0 30px;
+    display: inline;
+}
+
+.pagelinks {
+    text-align: center;
+}
+
+a:hover {
+    color: rgb(0, 86, 179);
+    text-decoration: underline;
+}
+
+/* Album section styling */
+.TRACKSTEMPLETE {
+    background-color: #f9f9f9; /* Light gray background for the album section */
+    border: 1px solid #ccc; /* Lighter gray border for structure */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    max-width: 800px; /* Centered on the page */
+    margin: 20px auto; /* Space above and below */
+    padding: 20px; /* Inner padding for content */
+    position: relative; /* Set position for child elements like delete button */
+    text-align: center; /* Center content */
+}
+
+/* Delete button styling */
+.TRACKSTEMPLETE .delete {
+    position: absolute; /* Position relative to .ALBUMTEMPLETE */
+    top: 15px; /* 15px from the top of the album section */
+    right: 15px; /* 15px from the right of the album section */
+    background-color: #ff4d4d; /* Red color for delete */
+    color: #fff; /* White icon */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for visibility */
+}
+
+.TRACKSTEMPLETE .delete:hover {
+    background-color: #ff6666; /* Lighter red on hover */
+}
+
+/* Image styling */
+.TRACKSTEMPLETE img {
+    display: block;
+    margin: 0 auto 15px; /* Center the image and add spacing below */
+    max-width: 120px; /* Limit image width */
+    border-radius: 10px; /* Rounded edges for the image */
+    border: 2px solid #555; /* Subtle border around the image */
+}
+
+/* Artist name styling for dark mode */
+.TRACKSTEMPLETE h2 {
+    font-size: 24px; /* Larger font size for emphasis */
+    color: #ff4d4d; /* Bright red for the artist's name */
+    margin-bottom: 10px;
+}
+
+/* Description paragraph styling for dark mode */
+.TRACKSTEMPLETE p {
+    font-size: 16px; /* Standard paragraph font size */
+    margin: 10px auto; /* Center the paragraph */
+    max-width: 700px; /* Restrict the paragraph width */
+    line-height: 1.6; /* Improve readability */
+    color: #ccc; /* Light gray text for better contrast on dark background */
+    text-align: center;
+}
+
+/* Albums section styling for dark mode */
+.TRACKSTEMPLETE .TRACKS {
+    margin-top: 20px; /* Space above the albums list */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align all items to the center */
+    justify-content: center; /* Ensure center alignment vertically */
+}
+
+/* Top albums section styling */
+.TRACKSTEMPLETE .TRACKS h3 {
+    font-size: 20px; /* Section title size */
+    color: #222; /* Dark gray for titles */
+    margin-bottom: 10px;
+    text-align: center; /* Ensure section title is centered */
+}
+
+.TRACKSTEMPLETE .TRACKS p {
+    font-size: 16px; /* Font size for album names */
+    color: #555; /* Medium gray for text */
+    margin: 5px auto; /* Space between album names */
+    text-align: center; /* Ensure each album name is aligned */
+}
+
+/* Hover effect for albums */
+.TRACKSTEMPLETE .TRACKS p:hover {
+    color: #ff4d4d; /* Highlight album name in red */
+    text-decoration: underline;
+}

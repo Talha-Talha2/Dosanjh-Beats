@@ -1,0 +1,103 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(18, 18, 18); /* Dark background */
+    color: rgb(224, 224, 224); /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* PWA Title styling */
+.PWA-TITLE {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 77, 77); /* Light red for the title */
+    margin: 20px 0 10px; /* Reduced bottom margin for closer spacing */
+}
+
+/* Logo styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+/* Dropdown menu container */
+.DROPDOWNMENU {
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+}
+
+/* Dropdown menu button */
+.DROPDOWNMENU > button {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dropdown menu items */
+.THEMEMODES {
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 0; /* Align dropdown items to the right edge */
+    background-color: rgb(255,0, 0);
+    color: rgb(255, 255, 255);
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px ;
+    z-index: 1;
+}
+
+.THEMEMODES .BTN {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.THEMEMODES .BTN:hover {
+    background-color: #ff6666;
+}
+
+/* Show dropdown items on hover */
+.DROPDOWNMENU:hover .THEMEMODES {
+    display: block;
+}
+
+/* Links styling */
+a {
+    color: #76c7ff; /* Light blue for links */
+    text-decoration: none;
+    font-size: 19px;
+    margin: 0 30px; /* Horizontal space between links */
+    display: inline;
+}
+
+.pagelinks {
+    text-align: center;
+    margin-bottom: 15px; /* Add space below links */
+}
+
+a:hover {
+    color: rgb(77, 168, 230); /* Slightly darker blue for hover */
+    text-decoration: underline;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 17.5px;
+    margin: 10px auto; /* Reduced vertical spacing for paragraphs */
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.5;
+    color: rgb(211, 211, 211); /* Light gray for dark mode paragraphs */
+}

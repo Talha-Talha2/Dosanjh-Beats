@@ -1,0 +1,151 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(18, 18, 18); /* Dark background */
+    color: rgb(224, 224, 224); /* Light text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* PWA Title styling */
+.PWA-TITLE {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 77, 77); /* Light red for the title */
+    margin: 20px 0 10px; /* Reduced bottom margin for closer spacing */
+}
+
+/* Logo styling */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+}
+
+/* Dropdown menu container */
+.DROPDOWNMENU {
+    position: absolute;
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+}
+
+/* Dropdown menu button */
+.DROPDOWNMENU > button {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dropdown menu items */
+.THEMEMODES {
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 0; /* Align dropdown items to the right edge */
+    background-color: rgb(255,0, 0);
+    color: rgb(255, 255, 255);
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px ;
+    z-index: 1;
+}
+
+.THEMEMODES .BTN {
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.THEMEMODES .BTN:hover {
+    background-color: #ff6666;
+}
+
+/* Show dropdown items on hover */
+.DROPDOWNMENU:hover .THEMEMODES {
+    display: block;
+}
+
+/* Links styling */
+a {
+    color: #76c7ff; /* Light blue for links */
+    text-decoration: none;
+    font-size: 19px;
+    margin: 0 30px; /* Horizontal space between links */
+    display: inline;
+}
+
+.pagelinks {
+    text-align: center;
+    margin-bottom: 15px; /* Add space below links */
+}
+
+a:hover {
+    color: rgb(77, 168, 230); /* Slightly darker blue for hover */
+    text-decoration: underline;
+}
+
+/* Artist section styling for Dark Mode */
+.ARTISTTEMPLETE {
+    background-color: #1e1e1e; /* Dark background for the artist section */
+    border: 1px solid #444; /* Subtle border for structure */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+    max-width: 800px;
+    margin: 20px auto; /* Centered on the page */
+    padding: 20px;
+    position: relative; /* Set position for child elements */
+    text-align: center; /* Center content */
+    color: #f1f1f1; /* Light text color for contrast */
+}
+
+/* Delete button styling for Dark Mode */
+.ARTISTTEMPLETE .delete {
+    position: absolute; /* Position relative to .ARTISTTEMPLETE */
+    top: 15px; /* 15px from the top of the artist section */
+    right: 15px; /* 15px from the right of the artist section */
+    background-color: #ff4d4d; /* Red color for delete */
+    color: #fff; /* White icon */
+    border: none;
+    border-radius: 50%; /* Circular button */
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2); /* Shadow for visibility */
+}
+
+.ARTISTTEMPLETE .delete:hover {
+    background-color: #ff6666; /* Lighter red on hover */
+}
+
+/* Other elements within ARTISTTEMPLETE (if necessary) */
+.ARTISTTEMPLETE h2,
+.ARTISTTEMPLETE p,
+.TOPALBUMS,
+.TOPTRACKS {
+    margin-top: 10px;
+    text-align: center;
+    color: #f1f1f1; /* Light text for readability */
+}
+
+/* Adjusted styles for albums and tracks */
+.TOPALBUMS h3,
+.TOPTRACKS h3 {
+    color: #ff4d4d; /* Highlighted headings for albums and tracks */
+}
+
+.TOPALBUMS p,
+.TOPTRACKS p {
+    color: #d3d3d3; /* Slightly dimmed text for album and track names */
+}

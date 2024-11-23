@@ -1,0 +1,18 @@
+{
+  "lang": "en-us",
+  "name": "Dosanjh Beats",
+  "short_name": "Dosanjh Beats",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "rgb(255, 0, 0)",
+  "theme_color": "rgb(255, 0, 0)",
+  "orientation": "any",
+  "icons": [
+        {
+          "src": "/Dosanjh-Beats/PWA Logo.png",
+          "type": "image/png",
+          "sizes": "500x500",
+          "purpose": "any"
+        }
+  ]
+}

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+
+<head>
+	
+	<meta charset="utf-8" />
+	<title>Albums</title>
+	<link rel="icon" type="image/png" href="PWA Logo(32x32).png">
+	<link id="mystylesheet" rel="stylesheet" href="Albums(Light).css">
+	
+	<script>
+		
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+		}
+	
+	</script>
+	
+	<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+    <!-- This section is for the top section of the webpage which will be common in all of the webpages! -->
+
+    <img src="PWA Logo.png">
+
+    <h1 class="PWA-TITLE">Dosanjh Beats</h1>
+
+    <div class="DROPDOWNMENU">
+
+        <button>⁝</button>
+
+        <div class="THEMEMODES">
+
+            <button class="BTN Light" onclick="swapStyle('Albums(Light).css')">Light Mode</button>
+            <button class="BTN Dark" onclick="swapStyle('Albums(Dark).css')">Dark Mode</button>
+
+        </div>
+
+    </div>
+
+    <!-- This section is for the links for diferent webpage from the homepage! -->
+
+    <div class="pagelinks">
+
+	    <button><a href="index.html">Home</a></button>
+	    
+	    <button><a href="Artists.html">Artists</a></button>
+	    
+	    <button><a href="Tracks.html">Tracks</a></button>
+
+    </div>
+
+    <!-- This section is for the description of the artists music and albums to be displayed! -->
+
+    <div class="ALBUMTEMPLETE">
+
+        <img scr="">
+
+        <button class="delete">🗑️</button>
+
+        <h2>Diljit Dosanjh</h2>
+
+        <!-- This is the Artist's music Description! -->
+        <p>
+            
+        </p>
+
+        <!-- This is the artist's top 15 albums! -->
+        <div class="ALBUMS">
+            <h3>Top 10 Albums</h3>
+            <p>G.O.A.T</p>
+            <p>Moonchild Era</p>
+            <p>Ghost</p>
+            <p>Drive Thru</p>
+            <p>Roar</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

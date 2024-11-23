@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Artists</title>
+	<link rel="icon" type="image/png" href="PWA Logo(32x32).png">
+	<link id="mystylesheet" rel="stylesheet" href="Artists(Light).css">
+
+	<script>
+		
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+		}	
+	
+	</script>
+
+	<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+	<!-- This section is for the top section of the webpage which will be common in all of the webpages! -->
+
+	<img src="PWA Logo.png">
+	
+	<h1 class="PWA-TITLE">Dosanjh Beats</h1>
+	
+	<div class="DROPDOWNMENU">
+		
+		<button>⁝</button>
+		
+		<div class="THEMEMODES">
+			
+			<button class="BTN Light" onclick="swapStyle('Artists(Light).css')">Light Mode</button>
+			<button class="BTN Dark" onclick="swapStyle('Artists(Dark).css')">Dark Mode</button>
+		
+		</div>
+		
+	</div>
+
+	<!-- This section is for the links for diferent webpage from the homepage! -->
+
+	<div class="pagelinks">
+		
+		<button><a href="index.html">Home</a></button>
+		
+		<button><a href="Albums.html">Albums</a></button>
+		
+		<button><a href="Tracks.html">Tracks</a></button>
+
+	</div>
+
+	<!-- This section is for the Artists to be displayed! -->
+
+	<div class="ARTISTTEMPLETE">
+		
+		<img scr="">
+
+		<button class="delete">🗑️</button>
+		
+		<h2>Diljit Dosanjh</h2>
+
+		<!-- This is the Artist Description! -->
+		<p>
+			Diljit Dosanjh is a renowned Indian singer, actor, and entertainer celebrated for his contributions to Punjabi music and cinema.
+			Known for his soulful voice and hit tracks like Do You Know and 5 Taara, he has also delivered iconic performances in films like 
+			the Jatt and Juliet series and Honsla Rakh. With his unique blend of traditional Punjabi roots and contemporary style, Diljit has 
+			become a global icon, bridging cultures through his music and acting.
+		</p>
+
+		<!-- This is the top 5 artist albums and tracks! -->
+		<div class="TOPALBUMS">
+			<h3>Top 5 Albums</h3>
+			<p>G.O.A.T</p>
+			<p>Moonchild Era</p>
+			<p>Ghost</p>
+			<p>Drive Thru</p>
+			<p>Roar</p>
+		</div>
+
+		<div class="TOPTRACKS">
+			<h3>Top 5 Tracks</h3>
+			<p>G.O.A.T</p>
+			<p>Born To Shine</p>
+			<p>Clash</p>
+			<p>5 Taara</p>
+			<p>Kharku</p>
+		</div>
+	
+	</div>
+
+</body>
+
+</html>
