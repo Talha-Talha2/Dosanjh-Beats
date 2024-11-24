@@ -64,6 +64,29 @@
 
 	<p>Founded by MT, I created Dosanjh Beats to celebrate the universal power of music and to provide a platform where fans and artists can connect through their shared love for creativity. The platform allows users to explore, showcase, and contribute to a growing catalog of artists, albums, and tracks.</p>
 
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+		
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+			apiKey: "AIzaSyB3z1y68w9AMPchcZVoNLfTQYqtSCMSGWM",
+			authDomain: "dosanjh-beats.firebaseapp.com",
+			projectId: "dosanjh-beats",
+			storageBucket: "dosanjh-beats.firebasestorage.app",
+			messagingSenderId: "393146699648",
+			appId: "1:393146699648:web:a26ec1a0e6f7082838fb65",
+			measurementId: "G-4YGLS0V68T"
+		};
+		
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
 
 </body>
 
