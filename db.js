@@ -1,5 +1,8 @@
 import { collection, onSnapshot } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js";
 
+import { enableLogging } from "firebase/firestore";
+enableLogging(true);
+
 // Access the "Artists" collection
 const artistsCollection = collection(db, "Artists");
 
