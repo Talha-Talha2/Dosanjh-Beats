@@ -84,10 +84,13 @@
 		
 		// Initialize Firebase
 		const app = initializeApp(firebaseConfig);
+		const db = getFirestore(app);
+		
+		db.collection('Artists').onSnapshot((snapshot) => {
+			console.log(snapshot.docChanges());
+		})
 		
 	</script>
-
-	<script src="/Dosanjh-Beats/db.js"></script>
 
 </body>
 
