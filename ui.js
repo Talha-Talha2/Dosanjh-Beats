@@ -58,16 +58,16 @@ const renderAlbums = (data, id) => {
 		
 		<div class="ALBUMS">
 			<h3>Top 10 Albums</h3>
-			<p>${data.Album-1}</p>
-			<p>${data.Album-2}</p>
-			<p>${data.Album-3}</p>
-			<p>${data.Album-4}</p>
-			<p>${data.Album-5}</p>
-   			<p>${data.Album-6}</p>
-			<p>${data.Album-7}</p>
-			<p>${data.Album-8}</p>
-			<p>${data.Album-9}</p>
-			<p>${data.Album-10}</p>
+			<p>${data.Album1}</p>
+			<p>${data.Album2}</p>
+			<p>${data.Album3}</p>
+			<p>${data.Album4}</p>
+			<p>${data.Album5}</p>
+   			<p>${data.Album6}</p>
+			<p>${data.Album7}</p>
+			<p>${data.Album8}</p>
+			<p>${data.Album9}</p>
+			<p>${data.Album10}</p>
 		</div>
 	
 	</div>
