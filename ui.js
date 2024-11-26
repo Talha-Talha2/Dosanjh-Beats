@@ -76,8 +76,8 @@ const renderAlbums = (data, id) => {
 
 const TRACKSSECTION = document.querySelector('.TRACKSSECTION');
 
-const renderAlbums = (data, id) => {
-  const ALBUMSHTML = `
+const renderTracks = (data, id) => {
+  const TRACKSHTML = `
     <div class="TRACKSTEMPLETE">
     	<img scr="">
      		
