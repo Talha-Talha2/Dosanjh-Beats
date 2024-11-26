@@ -16,20 +16,20 @@ const renderArtists = (data, id) => {
 		  <!-- This is the top 5 artist albums and tracks! -->
 		  <div class="TOPALBUMS">
 			  <h3>Top 5 Albums</h3>
-			  <p>${data.Album-1}</p>
-			  <p>${data.Album-2}</p>
-			  <p>${data.Album-3}</p>
-			  <p>${data.Album-4}</p>
-			  <p>${data.Album-5}</p>
+			  <p>${data.Album1}</p>
+			  <p>${data.Album2}</p>
+			  <p>${data.Album3}</p>
+			  <p>${data.Album4}</p>
+			  <p>${data.Album5}</p>
 		  </div>
 
 		  <div class="TOPTRACKS">
 			  <h3>Top 5 Tracks</h3>
-			  <p>${data.Track-1}</p>
-			  <p>${data.Track-2}</p>
-			  <p>${data.Track-3}</p>
-			  <p>${data.Track-4}</p>
-			  <p>${data.Track-5}</p>
+			  <p>${data.Track1}</p>
+			  <p>${data.Track2}</p>
+			  <p>${data.Track3}</p>
+			  <p>${data.Track4}</p>
+			  <p>${data.Track5}</p>
 		  </div>
 	
 	</div>
