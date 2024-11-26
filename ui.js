@@ -1,6 +1,5 @@
 const ARTISTSECTION = document.querySelector('.ARTISTSECTION');
 
-//render recipe data
 const renderArtists = (data, id) => {
   const ARTISTSHTML = `
     <div class="ARTISTTEMPLETE" data-id="${id}">
@@ -40,7 +39,6 @@ const renderArtists = (data, id) => {
 
 const ALBUMSSECTION = document.querySelector('.ALBUMSSECTION');
 
-//render recipe data
 const renderAlbums = (data, id) => {
   const ALBUMSHTML = `
     <div class="ALBUMTEMPLETE">
@@ -74,4 +72,37 @@ const renderAlbums = (data, id) => {
   `;
 
   ALBUMSSECTION.innerHTML += ALBUMSHTML
+};
+
+const TRACKSSECTION = document.querySelector('.TRACKSSECTION');
+
+const renderAlbums = (data, id) => {
+  const ALBUMSHTML = `
+    <div class="TRACKSTEMPLETE">
+    	<img scr="">
+     		
+       		<button class="delete">🗑️</button>
+		
+		<h2>${data.Artist}</h2>
+		
+		<!-- This is the artist's 10 tracks! -->
+		
+		<div class="TRACKS">
+			<h3>Top 10 Tracks</h3>
+			<p>${data.Track1}</p>
+			<p>${data.Track2}</p>
+			<p>${data.Track3}</p>
+			<p>${data.Track4}</p>
+			<p>${data.Track5}</p>
+   			<p>${data.Track6}</p>
+			<p>${data.Track7}</p>
+			<p>${data.Track8}</p>
+			<p>${data.Track9}</p>
+			<p>${data.Track10}</p>
+		</div>
+	
+	</div>
+  `;
+
+  TRACKSSECTION.innerHTML += TRACKSHTML
 };
