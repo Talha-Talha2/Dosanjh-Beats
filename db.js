@@ -20,3 +20,14 @@ db.collection('Albums').onSnapshot(snapshot => {
     }
   });
 });
+
+db.collection('Tracks').onSnapshot(snapshot => {
+  snapshot.docChanges().forEach(change => {
+    if(change.type === 'added'){
+      renderTracks(change.doc.data(), change.doc.id);
+    }
+    if(change.type === 'removed'){
+      renderTracks(change.doc.data(), change.doc.id);
+    }
+  });
+});
