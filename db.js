@@ -9,3 +9,14 @@ db.collection('Artists').onSnapshot(snapshot => {
     }
   });
 });
+
+db.collection('Albums').onSnapshot(snapshot => {
+  snapshot.docChanges().forEach(change => {
+    if(change.type === 'added'){
+      renderAlbums(change.doc.data(), change.doc.id);
+    }
+    if(change.type === 'removed'){
+      renderAlbums(change.doc.data(), change.doc.id);
+    }
+  });
+});
