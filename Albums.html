@@ -70,7 +70,7 @@
 		
 		<p></p>
 		
-		<!-- This is the artist's top 15 albums! -->
+		<!-- This is the artist's 10 albums! -->
 		
 		<div class="ALBUMS">
 			<h3>Top 10 Albums</h3>
@@ -82,6 +82,26 @@
 		</div>
 	
 	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+	
+	<script>
+		
+		var firebaseConfig = {
+			apiKey: "AIzaSyB3z1y68w9AMPchcZVoNLfTQYqtSCMSGWM",
+			authDomain: "dosanjh-beats.firebaseapp.com",
+			projectId: "dosanjh-beats",
+			storageBucket: "dosanjh-beats.firebasestorage.app",
+			messagingSenderId: "393146699648",
+			appId: "1:393146699648:web:a26ec1a0e6f7082838fb65",
+			measurementId: "G-4YGLS0V68T"
+		};
+		
+		firebase.initializeApp(firebaseConfig);
+		const db = firebase.firestore();
+	
+	</script>
 
 	<script src="/Dosanjh-Beats/db.js"></script>
 	<script src="/Dosanjh-Beats/ui.js"></script>
