@@ -149,7 +149,7 @@ a:hover {
     margin: 10px auto; /* Center the paragraph */
     max-width: 700px; /* Restrict the paragraph width */
     line-height: 1.6; /* Improve readability */
-    color: #ccc; /* Light gray text for better contrast on dark background */
+    color: #555; /* Medium gray for text */
     text-align: center;
 }
 
