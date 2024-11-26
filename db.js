@@ -9,6 +9,28 @@ db.collection('Artists').onSnapshot(snapshot => {
   });
 });
 
+db.collection('Albums').onSnapshot(snapshot => {
+  snapshot.docChanges().forEach(change => {
+    if(change.type === 'added'){
+      renderAlbums(change.doc.data(), change.doc.id);
+    }
+    if(change.type === 'removed'){
+      renderAlbums(change.doc.data(), change.doc.id);
+    }
+  });
+});
+
+db.collection('Tracks').onSnapshot(snapshot => {
+  snapshot.docChanges().forEach(change => {
+    if(change.type === 'added'){
+      renderTracks(change.doc.data(), change.doc.id);
+    }
+    if(change.type === 'removed'){
+      renderTracks(change.doc.data(), change.doc.id);
+    }
+  });
+});
+
 //add new artist
 const artistform = document.querySelector('ADDARTISTFORM');
 artistform.addEventListener('submit', evt => {
@@ -44,26 +66,4 @@ artistform.addEventListener('submit', evt => {
   artistform.TRACK3.value = '';
   artistform.TRACK4.value = '';
   artistform.TRACK5.value = '';
-});
-
-db.collection('Albums').onSnapshot(snapshot => {
-  snapshot.docChanges().forEach(change => {
-    if(change.type === 'added'){
-      renderAlbums(change.doc.data(), change.doc.id);
-    }
-    if(change.type === 'removed'){
-      renderAlbums(change.doc.data(), change.doc.id);
-    }
-  });
-});
-
-db.collection('Tracks').onSnapshot(snapshot => {
-  snapshot.docChanges().forEach(change => {
-    if(change.type === 'added'){
-      renderTracks(change.doc.data(), change.doc.id);
-    }
-    if(change.type === 'removed'){
-      renderTracks(change.doc.data(), change.doc.id);
-    }
-  });
 });
