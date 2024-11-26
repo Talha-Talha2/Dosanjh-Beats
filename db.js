@@ -10,7 +10,7 @@ db.collection('Artists').onSnapshot(snapshot => {
 });
 
 //add new artist
-const artistform = document.querySelector(form);
+const artistform = document.querySelector('ADDARTISTFORM');
 artistform.addEventListener('submit', evt => {
   evt.preventDefault();
 
