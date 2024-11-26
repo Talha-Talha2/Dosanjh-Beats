@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en-US" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>Tracks</title>
+	<link rel="icon" type="image/png" href="PWA Logo(32x32).png">
+	<link id="mystylesheet" rel="stylesheet" href="Tracks(Light).css">
+
+	<script>
+		
+		function swapStyle(sheet){
+			document.getElementById('mystylesheet').href = sheet
+		}	
+	
+	</script>
+
+	<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+	<!-- This section is for the top section of the webpage which will be common in all of the webpages! -->
+
+	<img src="PWA Logo.png">
+	
+	<h1 class="PWA-TITLE">Dosanjh Beats</h1>
+	
+	<div class="DROPDOWNMENU">
+		
+		<button>⁝</button>
+		
+		<div class="THEMEMODES">
+			
+			<button class="BTN Light" onclick="swapStyle('Tracks(Light).css')">Light Mode</button>
+			<button class="BTN Dark" onclick="swapStyle('Tracks(Dark).css')">Dark Mode</button>
+		
+		</div>
+		
+	</div>
+
+	<!-- This section is for the links for diferent webpage from the homepage! -->
+
+	<div class="pagelinks">
+
+		<button><a href="index.html">Home</a></button>
+		
+		<button><a href="Artists.html">Artists</a></button>
+		
+		<button><a href="Albums.html">Albums</a></button>
+		
+		<button><a href="Add Your Own.html">Add Your Own</a></button>
+
+	</div>
+
+	<!-- This section is for the description of the artists music and albums to be displayed! -->
+	
+	<div class="TRACKSSECTION">
+		<h1 style="text-align: center; color: rgb(255, 77, 77); margin: 20px 0 10px;">Tracks</h1>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-firestore.js"></script>
+	
+	<script>
+		
+		var firebaseConfig = {
+			apiKey: "AIzaSyB3z1y68w9AMPchcZVoNLfTQYqtSCMSGWM",
+			authDomain: "dosanjh-beats.firebaseapp.com",
+			projectId: "dosanjh-beats",
+			storageBucket: "dosanjh-beats.firebasestorage.app",
+			messagingSenderId: "393146699648",
+			appId: "1:393146699648:web:a26ec1a0e6f7082838fb65",
+			measurementId: "G-4YGLS0V68T"
+		};
+		
+		firebase.initializeApp(firebaseConfig);
+		const db = firebase.firestore();
+	
+	</script>
+
+	<script src="/Dosanjh-Beats/db.js"></script>
+	<script src="/Dosanjh-Beats/ui.js"></script>
+
+</body>
+
+</html>
