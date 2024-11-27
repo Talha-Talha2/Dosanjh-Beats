@@ -91,3 +91,66 @@ a:hover {
     color: rgb(77, 168, 230); /* Slightly darker blue for hover */
     text-decoration: underline;
 }
+
+.ADDARTIST {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(40, 40, 40); /* Slightly lighter container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+.ADDARTIST h3 {
+    color: rgb(255, 102, 102); /* Light red */
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.ADDARTIST h2 {
+    font-size: 18px;
+    color: rgb(200, 200, 200); /* Lighter gray for headings */
+    margin-bottom: 10px;
+}
+
+.ADDARTISTFORM label {
+    display: block;
+    font-size: 14px;
+    color: rgb(180, 180, 180); /* Light gray for labels */
+    margin-bottom: 5px;
+}
+
+.ADDARTISTFORM input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(70, 70, 70); /* Darker border */
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: rgb(50, 50, 50); /* Dark input field */
+    color: rgb(220, 220, 220); /* Light text inside input */
+}
+
+.ADDARTISTFORM input[type="text"]:focus {
+    border-color: rgb(102, 153, 255); /* Soft blue border */
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 153, 255, 0.5); /* Soft blue glow */
+}
+
+.ADDARTISTFORM button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 77, 77); /* Bright red button */
+    color: rgb(30, 30, 30); /* Dark text on button */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.ADDARTISTFORM button:hover {
+    background-color: rgb(230, 57, 57); /* Darker red on hover */
+}
