@@ -91,14 +91,6 @@ a:hover {
     text-decoration: underline;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(249, 249, 249);
-    color: rgb(51, 51, 51);
-    margin: 0;
-    padding: 0;
-}
-
 .ADDARTIST {
     max-width: 600px;
     margin: 50px auto;
